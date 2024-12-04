@@ -1,0 +1,71 @@
+{
+  "rows": [
+    {
+      "inputs.query": "Which tent is the most waterproof?",
+      "inputs.truth": "The Alpine Explorer Tent has the highest rainfly waterproof rating at 3000m",
+      "line_number": 0
+    },
+    {
+      "inputs.query": "Which camping table holds the most weight?",
+      "inputs.truth": "The Adventure Dining Table has a higher weight capacity than all of the other camping tables mentioned",
+      "line_number": 1
+    },
+    {
+      "inputs.query": "How much do the TrailWalker Hiking Shoes cost? ",
+      "inputs.truth": "The Trailewalker Hiking Shoes are priced at $110",
+      "line_number": 2
+    },
+    {
+      "inputs.query": "What is the proper care for trailwalker hiking shoes? ",
+      "inputs.truth": "After each use, remove any dirt or debris by brushing or wiping the shoes with a damp cloth.",
+      "line_number": 3
+    },
+    {
+      "inputs.query": "What brand is TrailMaster tent? ",
+      "inputs.truth": "OutdoorLiving",
+      "line_number": 4
+    },
+    {
+      "inputs.query": "How do I carry the TrailMaster tent around? ",
+      "inputs.truth": " Carry bag included for convenient storage and transportation",
+      "line_number": 5
+    },
+    {
+      "inputs.query": "What is the floor area for Floor Area? ",
+      "inputs.truth": "80 square feet",
+      "line_number": 6
+    },
+    {
+      "inputs.query": "What is the material for TrailBlaze Hiking Pants?",
+      "inputs.truth": "Made of high-quality nylon fabric",
+      "line_number": 7
+    },
+    {
+      "inputs.query": "What color does TrailBlaze Hiking Pants come in?",
+      "inputs.truth": "Khaki",
+      "line_number": 8
+    },
+    {
+      "inputs.query": "Can the warrenty for TrailBlaze pants be transfered? ",
+      "inputs.truth": "The warranty is non-transferable and applies only to the original purchaser of the TrailBlaze Hiking Pants. It is valid only when the product is purchased from an authorized retailer.",
+      "line_number": 9
+    },
+    {
+      "inputs.query": "How long are the TrailBlaze pants under warranty for? ",
+      "inputs.truth": " The TrailBlaze Hiking Pants are backed by a 1-year limited warranty from the date of purchase.",
+      "line_number": 10
+    },
+    {
+      "inputs.query": "What is the material for PowerBurner Camping Stove? ",
+      "inputs.truth": "Stainless Steel",
+      "line_number": 11
+    },
+    {
+      "inputs.query": "Is France in Europe?",
+      "inputs.truth": "Sorry, I can only queries related to outdoor/camping gear and equipment",
+      "line_number": 12
+    }
+  ],
+  "metrics": {},
+  "studio_url": "https://ai.azure.com/build/evaluation/5ef17b6b-f796-42d7-8a9f-dfe8988ff019?wsid=/subscriptions/2445fdd8-5e2c-4da4-8e51-8da0deba3b81/resourceGroups/rg_openai/providers/Microsoft.MachineLearningServices/workspaces/hello-ai-foundry"
+}
