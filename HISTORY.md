@@ -154,7 +154,7 @@ $> python src/hello_azure_ai_foundry/evaluation/
 
 ##### 2024-12-04 14:53
 
-[See outputs](./data/evaluations/20241204/1453/)
+[See outputs](./data/evaluations/app.ai.chat/v1/20241204/1453/)
 
 ```
 '-----Summarized Metrics-----'
@@ -176,9 +176,13 @@ $> python src/hello_azure_ai_foundry/evaluation/
 12  Sorry, I only can answer queries related to ou...  [[{'id': '8', 'content': 'Welcome to the joy o...  ...                                                NaN          12
 ```
 
-![Metrics Dashboard](./data/evaluations/20241204/1453/metrics/overview.png)
+![Metrics Dashboard](./data/evaluations/app.ai.chat/v1/20241204/1453/metrics/overview.png)
 
-![Detailed Metrics](./data/evaluations/20241204/1453/metrics/detailed.png)
+![Detailed Metrics](./data/evaluations/app.ai.chat/v1/20241204/1453/metrics/detailed.png)
+
+##### 2024-12-04 15:12
+
+[See outputs](./data/evaluations/app.ai.chat/20241204/1512/)
 
 #### Iterate and improve
 
