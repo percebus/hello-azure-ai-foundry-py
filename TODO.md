@@ -2,4 +2,5 @@
 
 ## 'To-Do's
 
-- [ ] TBD
+- [ ] Move data from `assets` to `data` directory
+- [ ] Remove `src` from `import`s

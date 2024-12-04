@@ -55,8 +55,18 @@ See `requirements[.variant].txt` files
 
 #### Create helper script
 
-See [`config.py`](./src/config.py)
+[See `config.py`](./src/utils/config.py)
 
 #### Configure environment variables
 
 Copy+paste `.env.sample` as `.env` file
+
+### Part 2 - Build a custom knowledge retrieval (RAG) app with the Azure AI Foundry SDK
+
+#### Create example data for your chat app
+
+[See `products.csv`](./assets/products.csv)
+
+#### Create a search index
+
+[See `search.py`](./src/ai/search.py)
