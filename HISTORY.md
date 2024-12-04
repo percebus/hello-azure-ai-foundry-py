@@ -152,6 +152,8 @@ Config `EVALUATION_MODEL` in `.env` file
 $> python src/hello_azure_ai_foundry/evaluation/
 ```
 
+![Compare](./data/evaluations/app.ai.chat/v1/compare.png)
+
 ##### 2024-12-04 14:53
 
 [See outputs](./data/evaluations/app.ai.chat/v1/20241204T1453/)
