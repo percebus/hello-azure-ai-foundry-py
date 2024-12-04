@@ -1,22 +1,22 @@
+import contextlib
+import multiprocessing
 import os
-import pandas as pd
-from azure.ai.projects import AIProjectClient
-from azure.ai.projects.models import ConnectionType
-from azure.ai.evaluation import evaluate, GroundednessEvaluator
-from azure.identity import DefaultAzureCredential
-from src.hello_azure_ai_foundry.config import ASSET_PATH
+from pathlib import Path
 
 # workaround for multiprocessing issue on linux
 from pprint import pprint
-from pathlib import Path
-import multiprocessing
-import contextlib
 
-
-from src.hello_azure_ai_foundry.app.ai.chat import chat_with_products
+import pandas as pd
+from azure.ai.evaluation import GroundednessEvaluator, evaluate
+from azure.ai.projects import AIProjectClient
+from azure.ai.projects.models import ConnectionType
+from azure.identity import DefaultAzureCredential
 
 # load environment variables from the .env file at the root of this repo
 from dotenv import load_dotenv
+
+from src.hello_azure_ai_foundry.app.ai.chat import chat_with_products
+from src.hello_azure_ai_foundry.config import ASSET_PATH
 
 load_dotenv()
 
