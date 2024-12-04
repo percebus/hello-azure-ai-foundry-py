@@ -7,6 +7,7 @@ import logging
 from azure.identity import DefaultAzureCredential
 from azure.ai.projects import AIProjectClient
 from azure.ai.inference.tracing import AIInferenceInstrumentor
+from azure.monitor.opentelemetry import configure_azure_monitor
 
 # load environment variables from the .env file
 from dotenv import load_dotenv
@@ -14,29 +15,31 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Set "./assets" as the path where assets are stored, resolving the absolute path:
-ASSET_PATH = pathlib.Path(__file__).parent.resolve() / "assets"
+ASSET_PATH = pathlib.Path(__file__).parent.resolve() / "../../assets"
 
 # Configure an root app logger that prints info level logs to stdout
 logger = logging.getLogger("app")
 logger.setLevel(logging.INFO)
 logger.addHandler(logging.StreamHandler(stream=sys.stdout))
+# logger.propagate = True
 
 
 # Returns a module-specific logger, inheriting from the root app logger
 def get_logger(module_name):
-    return logging.getLogger(f"app.{module_name}")
+    _logger = logging.getLogger(f"app.{module_name}")
+    # _logger.propagate = False
+    return _logger
 
 
 # Enable instrumentation and logging of telemetry to the project
-def enable_telemetry(log_to_project: bool = False):
+def set_telemetry(log_to_project: bool = False):
+    logger.debug("set_telemetry: {%s}", log_to_project)
     AIInferenceInstrumentor().instrument()
 
     # enable logging message contents
     os.environ["AZURE_TRACING_GEN_AI_CONTENT_RECORDING_ENABLED"] = "true"
 
     if log_to_project:
-        from azure.monitor.opentelemetry import configure_azure_monitor
-
         project = AIProjectClient.from_connection_string(
             conn_str=os.environ["AIPROJECT_CONNECTION_STRING"], credential=DefaultAzureCredential()
         )
@@ -46,6 +49,7 @@ def enable_telemetry(log_to_project: bool = False):
             logger.warning(
                 "No application insights configured, telemetry will not be logged to project. Add application insights at:"
             )
+
             logger.warning(tracing_link)
 
             return

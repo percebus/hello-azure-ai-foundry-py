@@ -1,32 +1,30 @@
 from argparse import Namespace, ArgumentParser
-import os
-from src.hello_azure_ai_foundry.ai.search import create_index_from_csv
-from src.hello_azure_ai_foundry.utils.config import get_logger
+from src.hello_azure_ai_foundry.ai.chat import run as run_chat
+from src.hello_azure_ai_foundry.config import set_telemetry, get_logger
 
-# initialize logging object
+
 logger = get_logger(__name__)
 
+def run(query:str, use_telemetry:bool):
+    logger.info("Starting hello-azure-ai-foundry...")
+    logger.info("query='{%s}'", query)
 
-def run(args: Namespace) -> None:
-    index_name: str = args.index_name
-    csv_file: str = args.csv_file
+    # enable telemetry if requested
+    set_telemetry(use_telemetry)
 
-    create_index_from_csv(index_name, csv_file)
+    # run the chat
+    run_chat(query)
 
 
 if __name__ == "__main__":
+    # load command line arguments
     parser = ArgumentParser()
-    parser.add_argument(
-        "--index-name",
-        type=str,
-        help="index name to use when creating the AI Search index",
-        default=os.environ["AISEARCH_INDEX_NAME"],
-    )
 
-    parser.add_argument(
-        "--csv-file", type=str, help="path to data for creating search index", default="assets/products.csv"
-    )
+    parser.add_argument("--query", type=str, help="Query to use to search product", default="I need a new tent for 4 people, what would you recommend?")
+    parser.add_argument("--enable-telemetry", action="store_true", help="Enable sending telemetry back to the project", default=False)
 
-    args:Namespace = parser.parse_args()
+    args: Namespace = parser.parse_args()
+    use_telemetry:bool = args.enable_telemetry
+    query:str = args.query
 
-    run(args.index_name, args.csv_file)
+    run(query, use_telemetry)

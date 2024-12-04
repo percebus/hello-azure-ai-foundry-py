@@ -70,3 +70,11 @@ Copy+paste `.env.sample` as `.env` file
 #### Create a search index
 
 [See `search.py`](./src/ai/search.py)
+
+#### Get product documents
+
+[See `products.py`](./src/ai/rag/products.py)
+
+#### Create a grounded chat prompt template
+
+[See `chat.py`](./src/ai/chat.py)

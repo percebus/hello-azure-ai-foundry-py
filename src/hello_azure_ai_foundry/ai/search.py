@@ -7,7 +7,7 @@ from azure.search.documents import SearchClient
 from azure.identity import DefaultAzureCredential
 from azure.core.credentials import AzureKeyCredential
 from azure.search.documents.indexes import SearchIndexClient
-from src.hello_azure_ai_foundry.utils.config import get_logger
+from src.hello_azure_ai_foundry.config import get_logger
 
 import pandas as pd
 from azure.search.documents.indexes.models import (
@@ -181,26 +181,17 @@ def create_index_from_csv(index_name, csv_file):
     logger.info(f"➕ Uploaded {len(docs)} documents to '{index_name}' index")
 
 
-def run(args: Namespace):
-    index_name: str = args.index_name
-    csv_file: str = args.csv_file
-
-    create_index_from_csv(index_name, csv_file)
+def run(*args) -> None:
+    create_index_from_csv(*args)
 
 
 if __name__ == "__main__":
     parser = ArgumentParser()
-    parser.add_argument(
-        "--index-name",
-        type=str,
-        help="index name to use when creating the AI Search index",
-        default=os.environ["AISEARCH_INDEX_NAME"],
-    )
-
-    parser.add_argument(
-        "--csv-file", type=str, help="path to data for creating search index", default="assets/products.csv"
-    )
+    parser.add_argument("--index-name", type=str, help="index name to use when creating the AI Search index", default=os.environ["AISEARCH_INDEX_NAME"])
+    parser.add_argument("--csv-file", type=str, help="path to data for creating search index", default="assets/products.csv")
 
     args:Namespace = parser.parse_args()
+    index_name: str = args.index_name
+    csv_file: str = args.csv_file
 
-    run(args.index_name, args.csv_file)
+    run(index_name, csv_file)
