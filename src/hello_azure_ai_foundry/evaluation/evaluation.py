@@ -4,7 +4,7 @@ from azure.ai.projects import AIProjectClient
 from azure.ai.projects.models import ConnectionType
 from azure.ai.evaluation import evaluate, GroundednessEvaluator
 from azure.identity import DefaultAzureCredential
-from config import ASSET_PATH
+from src.hello_azure_ai_foundry.config import ASSET_PATH
 
 # workaround for multiprocessing issue on linux
 from pprint import pprint

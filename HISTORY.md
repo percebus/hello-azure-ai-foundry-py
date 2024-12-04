@@ -19,8 +19,31 @@ To create a project in Azure AI Foundry, follow these steps:
 1. Select Next.
 1. Select Create project.
 
+![Create AI Hub](./assets/img/azure/ai/project/create/hub.png)
+
+##### Review
+
+You should see
+
+1. The overall+Hub
+1. Your-specific Project
+
+![Foundry | Management](./assets/img/azure/ai/foundry/management/all.png)
+
+#### Azure AI Studio
+
+> [!IMPORTANT]
+> REQUIRED
+
+If you created using existing resources make sure that you created one.
+It will create its own "Azure OpenAI" resource as well.
+
 #### Deploy models
 
+> [!WARNING]
+> Deploy these INSIDE your "Azure OpenAI" that was created/linked to your "Azure AI Services"
+
+- `gpt-4o`
 - `gpt-4o-mini`
 - `text-embedding-ada-002`
 
@@ -41,9 +64,11 @@ To create a project in Azure AI Foundry, follow these steps:
 1. Find your Azure AI Search service in the options and select Add connection.
 1. Use API key for Authentication.
 
+#### Status Check
+
 #### Install the Azure CLI and sign in
 
-See [`InstallAZCLIDeb.ba.sh`](./scripts/az/InstallAZCLIDeb.ba.sh)
+See [`InstallAZCLIDeb.ba.sh`](./scripts/az/InstallAzureCLIDeb.ba.sh)
 
 #### Create a new Python environment
 
@@ -55,13 +80,15 @@ See `requirements[.variant].txt` files
 
 #### Create helper script
 
-[See `config.py`](./src/utils/config.py)
+[See `config.py`](./src/hello_azure_ai_foundry/config.py)
 
 #### Configure environment variables
 
-Copy+paste `.env.sample` as `.env` file
+Copy+paste [`.env.sample`](./.env.sample) as `.env` file
 
 ### Part 2 - Build a custom knowledge retrieval (RAG) app with the Azure AI Foundry SDK
+
+[Tutorial: Part 2 - Build a custom knowledge retrieval (RAG) app with the Azure AI Foundry SDK](https://learn.microsoft.com/en-us/azure/ai-studio/tutorials/copilot-sdk-build-rag)
 
 #### Create example data for your chat app
 
@@ -69,12 +96,66 @@ Copy+paste `.env.sample` as `.env` file
 
 #### Create a search index
 
-[See `search.py`](./src/ai/search.py)
+[See `search.py`](./src/hello_azure_ai_foundry/app/ai/search.py)
 
 #### Get product documents
 
-[See `products.py`](./src/ai/rag/products.py)
+[See `products.py`](./src/hello_azure_ai_foundry/app/ai/rag/products.py)
 
-#### Create a grounded chat prompt template
+#### Create prompt template for intent mapping
 
-[See `chat.py`](./src/ai/chat.py)
+[See `intent_mapping.prompty`](./assets/intent_mapping.prompty)
+
+#### Test the product document retrieval script
+
+```bash
+$> python src/hello_azure_ai_foundry/app/ai/rag/products.py \
+    --query "I need a new tent for 4 people, what would you recommend?"
+```
+
+#### Develop custom knowledge retrieval (RAG) code
+
+[See `chat.py`](./src/hello_azure_ai_foundry/app/ai/chat.py)
+
+##### Create a grounded chat prompt template
+
+[See `grounded_chat.prompty`](./assets/grounded_chat.prompty)
+
+#### Run the chat script with RAG capabilities
+
+```bash
+$> python src/hello_azure_ai_foundry/app/ai/chat.py \
+    --query "I need a new tent for 4 people, what would you recommend?"
+```
+
+### Part 3 - Evaluate a custom chat application with the Azure AI Foundry SDK
+
+[Part 3 - Evaluate a custom chat application with the Azure AI Foundry SDK](https://learn.microsoft.com/en-us/azure/ai-studio/tutorials/copilot-sdk-evaluate)
+
+#### Evaluate the quality of the chat app responses
+
+##### Create evaluation dataset
+
+[See `chat_eval_data.py`](./assets/chat_eval_data.jsonl)
+
+#### Evaluate with Azure AI evaluators
+
+[See `evaluation.py`](./src/hello_azure_ai_foundry/evaluation/evaluation.py)
+
+#### Configure the evaluation model
+
+Config `EVALUATION_MODEL` in `.env` file
+
+#### Run the evaluation script
+
+```bash
+$> python src/hello_azure_ai_foundry/evaluation/
+```
+
+#### Iterate and improve
+
+Notice that the responses are not well grounded. In many cases, the model replies with a question rather than an answer. This is a result of the prompt template instructions.
+
+- In your assets/grounded_chat.prompty file, find the sentence "If the question is related to outdoor/camping gear and clothing but vague, ask for clarifying questions instead of referencing documents."
+- Change the sentence to "If the question is related to outdoor/camping gear and clothing but vague, try to answer based on the reference documents, then ask for clarifying questions."
+- Save the file and re-run the evaluation script.
