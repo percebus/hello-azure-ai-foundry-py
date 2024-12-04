@@ -10,8 +10,6 @@ from azure.search.documents.indexes import SearchIndexClient
 from src.hello_azure_ai_foundry.utils.config import get_logger
 
 import pandas as pd
-from src.hello_azure_ai_foundry.utils.config import get_logger
-from azure.search.documents import SearchClient
 from azure.search.documents.indexes.models import (
     SemanticSearch,
     SearchField,
