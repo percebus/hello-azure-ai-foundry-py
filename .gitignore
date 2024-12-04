@@ -1,4 +1,7 @@
 
+!data/**
+!data/**/*.log
+
 
 ########################
 ### Python.gitignore ### SRC: https://github.com/github/gitignore/blob/main/Python.gitignore
