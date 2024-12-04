@@ -182,7 +182,11 @@ $> python src/hello_azure_ai_foundry/evaluation/
 
 ##### 2024-12-04 15:12
 
-[See outputs](./data/evaluations/app.ai.chat/20241204/1512/)
+[See outputs](./data/evaluations/app.ai.chat/v1/20241204/1512/)
+
+##### Compare the evaluation results
+
+![Compare](./data/evaluations/app.ai.chat/v1/compare.png)
 
 #### Iterate and improve
 
