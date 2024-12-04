@@ -1,34 +1,34 @@
-from argparse import Namespace, ArgumentParser
-
 import os
-from azure.ai.projects import AIProjectClient
-from azure.ai.projects.models import ConnectionType
-from azure.search.documents import SearchClient
-from azure.identity import DefaultAzureCredential
-from azure.core.credentials import AzureKeyCredential
-from azure.search.documents.indexes import SearchIndexClient
-from src.hello_azure_ai_foundry.config import get_logger
+from argparse import ArgumentParser, Namespace
 
 import pandas as pd
+from azure.ai.projects import AIProjectClient
+from azure.ai.projects.models import ConnectionType
+from azure.core.credentials import AzureKeyCredential
+from azure.identity import DefaultAzureCredential
+from azure.search.documents import SearchClient
+from azure.search.documents.indexes import SearchIndexClient
 from azure.search.documents.indexes.models import (
-    SemanticSearch,
-    SearchField,
-    SimpleField,
-    SearchableField,
-    SearchFieldDataType,
-    SemanticConfiguration,
-    SemanticPrioritizedFields,
-    SemanticField,
-    VectorSearch,
-    HnswAlgorithmConfiguration,
-    VectorSearchAlgorithmKind,
-    HnswParameters,
-    VectorSearchAlgorithmMetric,
     ExhaustiveKnnAlgorithmConfiguration,
     ExhaustiveKnnParameters,
-    VectorSearchProfile,
+    HnswAlgorithmConfiguration,
+    HnswParameters,
+    SearchableField,
+    SearchField,
+    SearchFieldDataType,
     SearchIndex,
+    SemanticConfiguration,
+    SemanticField,
+    SemanticPrioritizedFields,
+    SemanticSearch,
+    SimpleField,
+    VectorSearch,
+    VectorSearchAlgorithmKind,
+    VectorSearchAlgorithmMetric,
+    VectorSearchProfile,
 )
+
+from src.hello_azure_ai_foundry.config import get_logger
 
 # initialize logging object
 logger = get_logger(__name__)
@@ -187,8 +187,18 @@ def run(*args) -> None:
 
 if __name__ == "__main__":
     parser = ArgumentParser()
-    parser.add_argument("--index-name", type=str, help="index name to use when creating the AI Search index", default=os.environ["AISEARCH_INDEX_NAME"])
-    parser.add_argument("--csv-file", type=str, help="path to data for creating search index", default="assets/products.csv")
+
+    parser.add_argument(
+        "--index-name",
+        type=str,
+        help="index name to use when creating the AI Search index",
+        default=os.environ["AISEARCH_INDEX_NAME"])
+
+    parser.add_argument(
+        "--csv-file",
+        type=str,
+        help="path to data for creating search index",
+        default="assets/products.csv")
 
     args:Namespace = parser.parse_args()
     index_name: str = args.index_name

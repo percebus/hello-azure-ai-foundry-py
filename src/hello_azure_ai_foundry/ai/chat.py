@@ -1,13 +1,14 @@
 import os
-
-from argparse import Namespace, ArgumentParser
+from argparse import ArgumentParser, Namespace
 from pathlib import Path
-from opentelemetry import trace
+
+from azure.ai.inference.prompts import PromptTemplate
 from azure.ai.projects import AIProjectClient
 from azure.identity import DefaultAzureCredential
 from config import ASSET_PATH, get_logger
+from opentelemetry import trace
+
 from src.hello_azure_ai_foundry.ai.rag.products import get_product_documents
-from azure.ai.inference.prompts import PromptTemplate
 
 # initialize logging and tracing objects
 logger = get_logger(__name__)
@@ -62,11 +63,13 @@ if __name__ == "__main__":
     # load command line arguments
     parser = ArgumentParser()
 
-    parser.add_argument("--query", type=str, help="Query to use to search product", default="I need a new tent for 4 people, what would you recommend?")
-    parser.add_argument("--enable-telemetry", action="store_true", help="Enable sending telemetry back to the project", default=False)
+    parser.add_argument(
+        "--query",
+        type=str,
+        help="Query to use to search product",
+        default="I need a new tent for 4 people, what would you recommend?")
 
     args:Namespace = parser.parse_args()
-    use_telemetry:bool = args.enable_telemetry
     query:str = args.query
 
-    run(query, use_telemetry)
+    run(query)

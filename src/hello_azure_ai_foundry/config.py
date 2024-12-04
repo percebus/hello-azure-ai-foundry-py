@@ -1,12 +1,13 @@
 # ruff: noqa: ANN201, ANN001
 
-import os
-import sys
-import pathlib
 import logging
-from azure.identity import DefaultAzureCredential
-from azure.ai.projects import AIProjectClient
+import os
+import pathlib
+import sys
+
 from azure.ai.inference.tracing import AIInferenceInstrumentor
+from azure.ai.projects import AIProjectClient
+from azure.identity import DefaultAzureCredential
 from azure.monitor.opentelemetry import configure_azure_monitor
 
 # load environment variables from the .env file

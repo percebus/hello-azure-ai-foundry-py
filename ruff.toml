@@ -1,0 +1,42 @@
+line-length = 150
+indent-width = 4
+show-fixes = true
+exclude = ["typings"]
+
+# Minimum Python version: 3.12
+target-version = "py312"
+
+[format]
+
+# Like Black:
+# use double quotes for strings.
+quote-style = "double"
+
+# indent with spaces, rather than tabs.
+indent-style = "space"
+
+# respect magic trailing commas.
+skip-magic-trailing-comma = false
+
+# automatically detect the appropriate line ending.
+line-ending = "auto"
+
+
+[lint]
+select = [
+    "F",   # Pyflakes
+    "E",   # pycodestyle
+    "I",   # isort
+    "SIM", # flake8-simplify
+    "TID", # flake8-tidy-imports
+    "W",   # warning
+]
+
+# Additional rules
+extend-select = ["C4", "SIM", "TCH"]
+
+fixable = ["ALL"]
+ignore = [
+    "TD",  # TODO
+    "D1",  # Missing docstring
+]

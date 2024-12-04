@@ -1,18 +1,18 @@
 import logging
-import argparse
-
 import os
+from argparse import ArgumentParser, Namespace
 from pathlib import Path
-from opentelemetry import trace
-from argparse import Namespace, ArgumentParser
+
+from azure.ai.inference.prompts import PromptTemplate
 from azure.ai.projects import AIProjectClient
 from azure.ai.projects.models import ConnectionType
-from azure.identity import DefaultAzureCredential
 from azure.core.credentials import AzureKeyCredential
+from azure.identity import DefaultAzureCredential
 from azure.search.documents import SearchClient
-from src.hello_azure_ai_foundry.config import ASSET_PATH, get_logger
-from azure.ai.inference.prompts import PromptTemplate
 from azure.search.documents.models import VectorizedQuery
+from opentelemetry import trace
+
+from src.hello_azure_ai_foundry.config import ASSET_PATH, get_logger
 
 # initialize logging and tracing objects
 logger = get_logger(__name__)
@@ -117,7 +117,11 @@ def run(content: str) -> None:
 if __name__ == "__main__":
     # load command line arguments
     parser = ArgumentParser()
-    parser.add_argument("--query", type=str, help="Query to use to search product", default="I need a new tent for 4 people, what would you recommend?")
+    parser.add_argument(
+        "--query",
+        type=str,
+        help="Query to use to search product",
+        default="I need a new tent for 4 people, what would you recommend?")
 
     args:Namespace = parser.parse_args()
     query:str = args.query
