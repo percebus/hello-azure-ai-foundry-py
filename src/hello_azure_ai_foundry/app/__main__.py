@@ -1,6 +1,6 @@
 from argparse import ArgumentParser, Namespace
 
-from src.hello_azure_ai_foundry.ai.chat import run as run_chat
+from src.hello_azure_ai_foundry.app.ai.chat import run as run_chat
 from src.hello_azure_ai_foundry.config import get_logger, set_telemetry
 
 logger = get_logger(__name__)

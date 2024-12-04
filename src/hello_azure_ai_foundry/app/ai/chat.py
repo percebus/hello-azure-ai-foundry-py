@@ -5,10 +5,11 @@ from pathlib import Path
 from azure.ai.inference.prompts import PromptTemplate
 from azure.ai.projects import AIProjectClient
 from azure.identity import DefaultAzureCredential
-from config import ASSET_PATH, get_logger
+from src.hello_azure_ai_foundry.config import ASSET_PATH, get_logger
 from opentelemetry import trace
 
-from src.hello_azure_ai_foundry.ai.rag.products import get_product_documents
+from src.hello_azure_ai_foundry.app.ai.rag.products import get_product_documents
+
 
 # initialize logging and tracing objects
 logger = get_logger(__name__)
