@@ -50,7 +50,7 @@ def run() -> None:
     result = evaluate(
         data=Path(ASSET_PATH) / "chat_eval_data.jsonl",
         target=evaluate_chat_with_products,
-        evaluation_name="evaluate_chat_with_products",
+        evaluation_name="evaluate_chat_with_products.v2",
         evaluators={
             "groundedness": groundedness,
         },

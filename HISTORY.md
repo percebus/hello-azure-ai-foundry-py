@@ -154,7 +154,9 @@ $> python src/hello_azure_ai_foundry/evaluation/
 
 ##### 2024-12-04 14:53
 
-[See outputs](./data/evaluations/app.ai.chat/v1/20241204/1453/)
+[See outputs](./data/evaluations/app.ai.chat/v1/20241204T1453/)
+
+![Metrics Dashboard](./data/evaluations/app.ai.chat/v1/20241204T1453/metrics/dashboard.png)
 
 ```
 '-----Summarized Metrics-----'
@@ -176,22 +178,43 @@ $> python src/hello_azure_ai_foundry/evaluation/
 12  Sorry, I only can answer queries related to ou...  [[{'id': '8', 'content': 'Welcome to the joy o...  ...                                                NaN          12
 ```
 
-![Metrics Dashboard](./data/evaluations/app.ai.chat/v1/20241204/1453/metrics/overview.png)
+![Detailed Metrics](./data/evaluations/app.ai.chat/v1/20241204T1453/metrics/detailed.png)
 
-![Detailed Metrics](./data/evaluations/app.ai.chat/v1/20241204/1453/metrics/detailed.png)
+##### 2024-12-04 15:25
 
-##### 2024-12-04 15:12
-
-[See outputs](./data/evaluations/app.ai.chat/v1/20241204/1512/)
+[See outputs](./data/evaluations/app.ai.chat/v1/20241204T1525/)
 
 ##### Compare the evaluation results
 
-![Compare](./data/evaluations/app.ai.chat/v1/compare.png)
+![Compare](./data/evaluations/app.ai.chat/compare.png)
 
 #### Iterate and improve
 
 Notice that the responses are not well grounded. In many cases, the model replies with a question rather than an answer. This is a result of the prompt template instructions.
 
-- In your assets/grounded_chat.prompty file, find the sentence "If the question is related to outdoor/camping gear and clothing but vague, ask for clarifying questions instead of referencing documents."
-- Change the sentence to "If the question is related to outdoor/camping gear and clothing but vague, try to answer based on the reference documents, then ask for clarifying questions."
+- In your [`grounded_chat/v1.prompty`](./assets/prompts/grounded_chat/v1.prompty) file, find the sentence
+
+`If the question is related to outdoor/camping gear and clothing but vague, ask for clarifying questions instead of referencing documents.`
+
+- Change the sentence to
+
+`If the question is related to outdoor/camping gear and clothing but vague, try to answer based on the reference documents, then ask for clarifying questions.`
+
 - Save the file and re-run the evaluation script.
+
+> [!NOTE]
+> I copied the files to have v1 VS v2 to do multi- A|B testing
+
+See [`grounded_chat/v2.prompty`](./assets/prompts/grounded_chat/v2.prompty)
+
+##### 2024-12-04 15:45
+
+[See output](./data/evaluations/app.ai.chat/v2/20241204T1545/)
+
+![Metrics Dashboard](./data/evaluations/app.ai.chat/v2/20241204T1545/metrics/dashboard.png)
+
+#### Comparison
+
+See how Question #3 was improved
+
+![Compare](./data/evaluations/app.ai.chat/compare.png)

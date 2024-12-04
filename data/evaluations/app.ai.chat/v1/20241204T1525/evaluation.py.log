@@ -1,0 +1,816 @@
+$ python src/hello_azure_ai_foundry/evaluation/
+Prompt flow service has started...
+You can view the traces in local from http://127.0.0.1:23333/v1.0/ui/traces/?#run=src_hello_azure_ai_foundry_evaluation_evaluation_evaluate_chat_with_products_0j0h74pk_20241204_152459_840710
+[2024-12-04 15:25:12 -0600][promptflow._sdk._orchestrator.run_submitter][INFO] - Submitting run src_hello_azure_ai_foundry_evaluation_evaluation_evaluate_chat_with_products_0j0h74pk_20241204_152459_840710, log path: C:\Users\johndoe\.promptflow\.runs\src_hello_azure_ai_foundry_evaluation_evaluation_evaluate_chat_with_products_0j0h74pk_20241204_152459_840710\logs.txt
+💬 Response: {'content': 'Could you please specify which tent you are asking about?', 'role': 'assistant'}
+💬 Response: {'content': 'Sorry, I only can answer queries related to outdoor/camping gear and clothing. So, how can I help?', 'role': 'assistant'}
+💬 Response: {'content': "Could you please clarify if you're asking about cleaning methods, storage tips, or something else related to the care of TrailWalker Hiking Shoes?", 'role': 'assistant'}
+💬 Response: {'content': 'Could you please specify which camping table you are asking about? There are different types like the BaseCamp Folding Table and Adventure Dining Table, and I can provide details on their weight capacities.', 'role': 'assistant'}
+💬 Response: {'content': 'The TrailBlaze Hiking Pants are crafted from high-quality nylon fabric.', 'role': 'assistant'}
+💬 Response: {'content': 'The TrailMaster X4 Tent comes with an included carry bag, making it convenient to transport. You can simply pack the tent into the bag for easy carrying on your camping adventures. If you have any more specific questions about the tent or its features, feel free to ask!', 'role': 'assistant'}
+💬 Response: {'content': 'Sorry, I only can answer queries related to outdoor/camping gear and clothing. So, how can I help?', 'role': 'assistant'}
+💬 Response: {'content': 'Sorry, I only can answer queries related to outdoor/camping gear and clothing. So, how can I help?', 'role': 'assistant'}
+💬 Response: {'content': 'Sorry, I only can answer queries related to outdoor/camping gear and clothing. So, how can I help?', 'role': 'assistant'}
+💬 Response: {'content': 'Sorry, I only can answer queries related to outdoor/camping gear and clothing. So, how can I help?', 'role': 'assistant'}
+💬 Response: {'content': 'Sorry, I only can answer queries related to outdoor/camping gear and clothing. So, how can I help?', 'role': 'assistant'}
+[2024-12-04 15:28:31 -0600][promptflow._sdk._orchestrator.run_submitter][WARNING] - 2 out of 13 runs failed in batch run.
+ Please check out C:/Users/johndoe/.promptflow/.runs/src_hello_azure_ai_foundry_evaluation_evaluation_evaluate_chat_with_products_0j0h74pk_20241204_152459_840710 for more details.
+2024-12-04 15:25:12 -0600  126128 execution.bulk     INFO     Current thread is not main thread, skip signal handler registration in BatchEngine.
+2024-12-04 15:25:12 -0600  126128 execution          WARNING  Starting run without column mapping may lead to unexpected results. Please consult the following documentation for more information: https://aka.ms/pf/column-mapping
+2024-12-04 15:25:12 -0600  126128 execution.bulk     INFO     Current system's available memory is 9206.546875MB, memory consumption of current process is 189.8828125MB, estimated available worker count is 9206.546875/189.8828125 = 48
+2024-12-04 15:25:12 -0600  126128 execution.bulk     INFO     Set process count to 4 by taking the minimum value among the factors of {'default_worker_count': 4, 'row_count': 13, 'estimated_worker_count_based_on_memory_usage': 48}.
+2024-12-04 15:25:14 -0600  126128 execution.bulk     INFO     Process name(SpawnProcess-4)-Process id(8368)-Line number(0) start execution.
+2024-12-04 15:25:14 -0600  126128 execution.bulk     INFO     Process name(SpawnProcess-7)-Process id(29748)-Line number(1) start execution.
+2024-12-04 15:25:14 -0600  126128 execution.bulk     INFO     Process name(SpawnProcess-6)-Process id(119624)-Line number(2) start execution.
+2024-12-04 15:25:14 -0600  126128 execution.bulk     INFO     Process name(SpawnProcess-5)-Process id(101140)-Line number(3) start execution.
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr> --- Logging error ---
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr> Traceback (most recent call last):
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr>
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\logging\__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr>
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr>
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr> UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4ac' in position 48: character maps to <undefined>
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr>
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr> Call stack:
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr>   File "<string>", line 1, in <module>
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr>
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr>
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\spawn.py", line 135, in _main
+    return self._bootstrap(parent_sentinel)
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr>
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr>
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr>
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_line_execution_process_pool.py", line 714, in _process_wrapper
+    _exec_line_for_queue(
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr>
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_line_execution_process_pool.py", line 770, in _exec_line_for_queue
+    result = _exec_line(
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr>
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_line_execution_process_pool.py", line 789, in _exec_line
+    line_result = executor.exec_line(
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr>
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_script_executor.py", line 139, in exec_line
+    return self._exec_line(inputs, index, run_id, allow_generator_output=allow_generator_output)
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr>
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_script_executor.py", line 182, in _exec_line
+    output = self._func(**inputs)
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr>
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\tracing\_trace.py", line 538, in wrapped
+    return func(*args, **kwargs)
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr>
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr>   File "C:\Users\johndoe\Projects\github\percebus\hello-azure-ai-foundry-py\src\hello_azure_ai_foundry\evaluation\evaluation.py", line 41, in evaluate_chat_with_products
+    response = chat_with_products(messages=[{"role": "user", "content": query}])
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr>
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr>
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr>   File "C:\Users\johndoe\Projects\github\percebus\hello-azure-ai-foundry-py\src\hello_azure_ai_foundry\app\ai\chat.py", line 45, in chat_with_products
+    logger.info(f"💬 Response: {response.choices[0].message}")
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr>
+2024-12-04 15:25:27 -0600    8368 execution          WARNING  [Flex in line 0 (index starts from 0)] stderr> Message: "💬 Response: {'content': 'Could you please specify which tent you are asking about?', 'role': 'assistant'}"
+Arguments: ()
+2024-12-04 15:25:27 -0600  126128 execution.bulk     INFO     Process name(SpawnProcess-4)-Process id(8368)-Line number(0) completed.
+2024-12-04 15:25:27 -0600  126128 execution.bulk     INFO     Process name(SpawnProcess-4)-Process id(8368)-Line number(4) start execution.
+2024-12-04 15:25:27 -0600  126128 execution.bulk     INFO     Finished 1 / 13 lines.
+2024-12-04 15:25:27 -0600  126128 execution.bulk     INFO     Average execution time for completed lines: 13.1 seconds. Estimated time for incomplete lines: 157.2 seconds.
+2024-12-04 15:26:14 -0600  126128 execution.bulk     INFO     [Process Pool] [Active processes: 4 / 4]
+2024-12-04 15:26:14 -0600  126128 execution.bulk     INFO     [Lines] [Finished: 1] [Processing: 4] [Pending: 8]
+2024-12-04 15:26:14 -0600  126128 execution.bulk     INFO     Processing Lines: line 1 (Process name(SpawnProcess-7)-Process id(29748)-Line number(1)), line 2 (Process name(SpawnProcess-6)-Process id(119624)-Line number(2)), line 3 (Process name(SpawnProcess-5)-Process id(101140)-Line number(3)), line 4 (Process name(SpawnProcess-4)-Process id(8368)-Line number(4)).
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr> --- Logging error ---
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr> Traceback (most recent call last):
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\logging\__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr> UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4ac' in position 48: character maps to <undefined>
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr> Call stack:
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr>   File "<string>", line 1, in <module>
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\spawn.py", line 135, in _main
+    return self._bootstrap(parent_sentinel)
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_line_execution_process_pool.py", line 714, in _process_wrapper
+    _exec_line_for_queue(
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_line_execution_process_pool.py", line 770, in _exec_line_for_queue
+    result = _exec_line(
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_line_execution_process_pool.py", line 789, in _exec_line
+    line_result = executor.exec_line(
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_script_executor.py", line 139, in exec_line
+    return self._exec_line(inputs, index, run_id, allow_generator_output=allow_generator_output)
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_script_executor.py", line 182, in _exec_line
+    output = self._func(**inputs)
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\tracing\_trace.py", line 538, in wrapped
+    return func(*args, **kwargs)
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr>   File "C:\Users\johndoe\Projects\github\percebus\hello-azure-ai-foundry-py\src\hello_azure_ai_foundry\evaluation\evaluation.py", line 41, in evaluate_chat_with_products
+    response = chat_with_products(messages=[{"role": "user", "content": query}])
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr>   File "C:\Users\johndoe\Projects\github\percebus\hello-azure-ai-foundry-py\src\hello_azure_ai_foundry\app\ai\chat.py", line 45, in chat_with_products
+    logger.info(f"💬 Response: {response.choices[0].message}")
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  119624 execution          WARNING  [Flex in line 2 (index starts from 0)] stderr> Message: "💬 Response: {'content': 'Sorry, I only can answer queries related to outdoor/camping gear and clothing. So, how can I help?', 'role': 'assistant'}"
+Arguments: ()
+2024-12-04 15:26:26 -0600  126128 execution.bulk     INFO     Process name(SpawnProcess-6)-Process id(119624)-Line number(2) completed.
+2024-12-04 15:26:26 -0600  126128 execution.bulk     INFO     Process name(SpawnProcess-6)-Process id(119624)-Line number(5) start execution.
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr> --- Logging error ---
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr> Traceback (most recent call last):
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\logging\__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr> UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4ac' in position 48: character maps to <undefined>
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr> Call stack:
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr>   File "<string>", line 1, in <module>
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\spawn.py", line 135, in _main
+    return self._bootstrap(parent_sentinel)
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_line_execution_process_pool.py", line 714, in _process_wrapper
+    _exec_line_for_queue(
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_line_execution_process_pool.py", line 770, in _exec_line_for_queue
+    result = _exec_line(
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_line_execution_process_pool.py", line 789, in _exec_line
+    line_result = executor.exec_line(
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_script_executor.py", line 139, in exec_line
+    return self._exec_line(inputs, index, run_id, allow_generator_output=allow_generator_output)
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_script_executor.py", line 182, in _exec_line
+    output = self._func(**inputs)
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\tracing\_trace.py", line 538, in wrapped
+    return func(*args, **kwargs)
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr>   File "C:\Users\johndoe\Projects\github\percebus\hello-azure-ai-foundry-py\src\hello_azure_ai_foundry\evaluation\evaluation.py", line 41, in evaluate_chat_with_products
+    response = chat_with_products(messages=[{"role": "user", "content": query}])
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr>   File "C:\Users\johndoe\Projects\github\percebus\hello-azure-ai-foundry-py\src\hello_azure_ai_foundry\app\ai\chat.py", line 45, in chat_with_products
+    logger.info(f"💬 Response: {response.choices[0].message}")
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr>
+2024-12-04 15:26:26 -0600  101140 execution          WARNING  [Flex in line 3 (index starts from 0)] stderr> Message: '💬 Response: {\'content\': "Could you please clarify if you\'re asking about cleaning methods, storage tips, or something else related to the care of TrailWalker Hiking Shoes?", \'role\': \'assistant\'}'
+Arguments: ()
+2024-12-04 15:26:26 -0600  126128 execution.bulk     INFO     Process name(SpawnProcess-5)-Process id(101140)-Line number(3) completed.
+2024-12-04 15:26:26 -0600  126128 execution.bulk     INFO     Process name(SpawnProcess-5)-Process id(101140)-Line number(6) start execution.
+2024-12-04 15:26:26 -0600  126128 execution.bulk     INFO     Finished 3 / 13 lines.
+2024-12-04 15:26:26 -0600  126128 execution.bulk     INFO     Average execution time for completed lines: 24.19 seconds. Estimated time for incomplete lines: 241.9 seconds.
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr> --- Logging error ---
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr> Traceback (most recent call last):
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr>
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\logging\__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr>
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr>
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr> UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4ac' in position 48: character maps to <undefined>
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr>
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr> Call stack:
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr>   File "<string>", line 1, in <module>
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr>
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr>
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\spawn.py", line 135, in _main
+    return self._bootstrap(parent_sentinel)
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr>
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr>
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr>
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_line_execution_process_pool.py", line 714, in _process_wrapper
+    _exec_line_for_queue(
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr>
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_line_execution_process_pool.py", line 770, in _exec_line_for_queue
+    result = _exec_line(
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr>
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_line_execution_process_pool.py", line 789, in _exec_line
+    line_result = executor.exec_line(
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr>
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_script_executor.py", line 139, in exec_line
+    return self._exec_line(inputs, index, run_id, allow_generator_output=allow_generator_output)
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr>
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_script_executor.py", line 182, in _exec_line
+    output = self._func(**inputs)
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr>
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\tracing\_trace.py", line 538, in wrapped
+    return func(*args, **kwargs)
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr>
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr>   File "C:\Users\johndoe\Projects\github\percebus\hello-azure-ai-foundry-py\src\hello_azure_ai_foundry\evaluation\evaluation.py", line 41, in evaluate_chat_with_products
+    response = chat_with_products(messages=[{"role": "user", "content": query}])
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr>
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr>
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr>   File "C:\Users\johndoe\Projects\github\percebus\hello-azure-ai-foundry-py\src\hello_azure_ai_foundry\app\ai\chat.py", line 45, in chat_with_products
+    logger.info(f"💬 Response: {response.choices[0].message}")
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr>
+2024-12-04 15:26:27 -0600   29748 execution          WARNING  [Flex in line 1 (index starts from 0)] stderr> Message: "💬 Response: {'content': 'Could you please specify which camping table you are asking about? There are different types like the BaseCamp Folding Table and Adventure Dining Table, and I can provide details on their weight capacities.', 'role': 'assistant'}"
+Arguments: ()
+2024-12-04 15:26:27 -0600  126128 execution.bulk     INFO     Process name(SpawnProcess-7)-Process id(29748)-Line number(1) completed.
+2024-12-04 15:26:27 -0600  126128 execution.bulk     INFO     Process name(SpawnProcess-7)-Process id(29748)-Line number(7) start execution.
+2024-12-04 15:26:27 -0600  126128 execution.bulk     INFO     Finished 4 / 13 lines.
+2024-12-04 15:26:27 -0600  126128 execution.bulk     INFO     Average execution time for completed lines: 18.39 seconds. Estimated time for incomplete lines: 165.51 seconds.
+2024-12-04 15:27:14 -0600  126128 execution.bulk     INFO     [Process Pool] [Active processes: 4 / 4]
+2024-12-04 15:27:14 -0600  126128 execution.bulk     INFO     [Lines] [Finished: 4] [Processing: 4] [Pending: 5]
+2024-12-04 15:27:14 -0600  126128 execution.bulk     INFO     Processing Lines: line 4 (Process name(SpawnProcess-4)-Process id(8368)-Line number(4)), line 5 (Process name(SpawnProcess-6)-Process id(119624)-Line number(5)), line 6 (Process name(SpawnProcess-5)-Process id(101140)-Line number(6)), line 7 (Process name(SpawnProcess-7)-Process id(29748)-Line number(7)).
+2024-12-04 15:27:26 -0600  126128 execution.bulk     INFO     Process name(SpawnProcess-4)-Process id(8368)-Line number(4) completed.
+2024-12-04 15:27:26 -0600  126128 execution.bulk     INFO     Process name(SpawnProcess-4)-Process id(8368)-Line number(8) start execution.
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr> --- Logging error ---
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr> Traceback (most recent call last):
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\logging\__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr> UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4ac' in position 48: character maps to <undefined>
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr> Call stack:
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr>   File "<string>", line 1, in <module>
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\spawn.py", line 135, in _main
+    return self._bootstrap(parent_sentinel)
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_line_execution_process_pool.py", line 714, in _process_wrapper
+    _exec_line_for_queue(
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_line_execution_process_pool.py", line 770, in _exec_line_for_queue
+    result = _exec_line(
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_line_execution_process_pool.py", line 789, in _exec_line
+    line_result = executor.exec_line(
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_script_executor.py", line 139, in exec_line
+    return self._exec_line(inputs, index, run_id, allow_generator_output=allow_generator_output)
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_script_executor.py", line 182, in _exec_line
+    output = self._func(**inputs)
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\tracing\_trace.py", line 538, in wrapped
+    return func(*args, **kwargs)
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr>   File "C:\Users\johndoe\Projects\github\percebus\hello-azure-ai-foundry-py\src\hello_azure_ai_foundry\evaluation\evaluation.py", line 41, in evaluate_chat_with_products
+    response = chat_with_products(messages=[{"role": "user", "content": query}])
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr>   File "C:\Users\johndoe\Projects\github\percebus\hello-azure-ai-foundry-py\src\hello_azure_ai_foundry\app\ai\chat.py", line 45, in chat_with_products
+    logger.info(f"💬 Response: {response.choices[0].message}")
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600   29748 execution          WARNING  [Flex in line 7 (index starts from 0)] stderr> Message: "💬 Response: {'content': 'The TrailBlaze Hiking Pants are crafted from high-quality nylon fabric.', 'role': 'assistant'}"
+Arguments: ()
+2024-12-04 15:27:26 -0600  126128 execution.bulk     INFO     Process name(SpawnProcess-7)-Process id(29748)-Line number(7) completed.
+2024-12-04 15:27:26 -0600  126128 execution.bulk     INFO     Process name(SpawnProcess-7)-Process id(29748)-Line number(9) start execution.
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr> --- Logging error ---
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr> Traceback (most recent call last):
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\logging\__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr> UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4ac' in position 48: character maps to <undefined>
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr> Call stack:
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr>   File "<string>", line 1, in <module>
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\spawn.py", line 135, in _main
+    return self._bootstrap(parent_sentinel)
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_line_execution_process_pool.py", line 714, in _process_wrapper
+    _exec_line_for_queue(
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_line_execution_process_pool.py", line 770, in _exec_line_for_queue
+    result = _exec_line(
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_line_execution_process_pool.py", line 789, in _exec_line
+    line_result = executor.exec_line(
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_script_executor.py", line 139, in exec_line
+    return self._exec_line(inputs, index, run_id, allow_generator_output=allow_generator_output)
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_script_executor.py", line 182, in _exec_line
+    output = self._func(**inputs)
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\tracing\_trace.py", line 538, in wrapped
+    return func(*args, **kwargs)
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr>   File "C:\Users\johndoe\Projects\github\percebus\hello-azure-ai-foundry-py\src\hello_azure_ai_foundry\evaluation\evaluation.py", line 41, in evaluate_chat_with_products
+    response = chat_with_products(messages=[{"role": "user", "content": query}])
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr>   File "C:\Users\johndoe\Projects\github\percebus\hello-azure-ai-foundry-py\src\hello_azure_ai_foundry\app\ai\chat.py", line 45, in chat_with_products
+    logger.info(f"💬 Response: {response.choices[0].message}")
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr>
+2024-12-04 15:27:26 -0600  119624 execution          WARNING  [Flex in line 5 (index starts from 0)] stderr> Message: "💬 Response: {'content': 'The TrailMaster X4 Tent comes with an included carry bag, making it convenient to transport. You can simply pack the tent into the bag for easy carrying on your camping adventures. If you have any more specific questions about the tent or its features, feel free to ask!', 'role': 'assistant'}"
+Arguments: ()
+2024-12-04 15:27:26 -0600  126128 execution.bulk     INFO     Process name(SpawnProcess-6)-Process id(119624)-Line number(5) completed.
+2024-12-04 15:27:26 -0600  126128 execution.bulk     INFO     Process name(SpawnProcess-6)-Process id(119624)-Line number(10) start execution.
+2024-12-04 15:27:27 -0600  126128 execution.bulk     INFO     Finished 7 / 13 lines.
+2024-12-04 15:27:27 -0600  126128 execution.bulk     INFO     Average execution time for completed lines: 19.0 seconds. Estimated time for incomplete lines: 114.0 seconds.
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr> --- Logging error ---
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr> Traceback (most recent call last):
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr>
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\logging\__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr>
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr>
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr> UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4ac' in position 48: character maps to <undefined>
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr>
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr> Call stack:
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr>   File "<string>", line 1, in <module>
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr>
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr>
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\spawn.py", line 135, in _main
+    return self._bootstrap(parent_sentinel)
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr>
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr>
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr>
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_line_execution_process_pool.py", line 714, in _process_wrapper
+    _exec_line_for_queue(
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr>
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_line_execution_process_pool.py", line 770, in _exec_line_for_queue
+    result = _exec_line(
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr>
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_line_execution_process_pool.py", line 789, in _exec_line
+    line_result = executor.exec_line(
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr>
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_script_executor.py", line 139, in exec_line
+    return self._exec_line(inputs, index, run_id, allow_generator_output=allow_generator_output)
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr>
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_script_executor.py", line 182, in _exec_line
+    output = self._func(**inputs)
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr>
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\tracing\_trace.py", line 538, in wrapped
+    return func(*args, **kwargs)
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr>
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr>   File "C:\Users\johndoe\Projects\github\percebus\hello-azure-ai-foundry-py\src\hello_azure_ai_foundry\evaluation\evaluation.py", line 41, in evaluate_chat_with_products
+    response = chat_with_products(messages=[{"role": "user", "content": query}])
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr>
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr>
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr>   File "C:\Users\johndoe\Projects\github\percebus\hello-azure-ai-foundry-py\src\hello_azure_ai_foundry\app\ai\chat.py", line 45, in chat_with_products
+    logger.info(f"💬 Response: {response.choices[0].message}")
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr>
+2024-12-04 15:27:27 -0600    8368 execution          WARNING  [Flex in line 8 (index starts from 0)] stderr> Message: "💬 Response: {'content': 'Sorry, I only can answer queries related to outdoor/camping gear and clothing. So, how can I help?', 'role': 'assistant'}"
+Arguments: ()
+2024-12-04 15:27:27 -0600  126128 execution.bulk     INFO     Process name(SpawnProcess-4)-Process id(8368)-Line number(8) completed.
+2024-12-04 15:27:27 -0600  126128 execution.bulk     INFO     Process name(SpawnProcess-4)-Process id(8368)-Line number(11) start execution.
+2024-12-04 15:27:28 -0600  126128 execution.bulk     INFO     Finished 8 / 13 lines.
+2024-12-04 15:27:28 -0600  126128 execution.bulk     INFO     Average execution time for completed lines: 16.75 seconds. Estimated time for incomplete lines: 83.75 seconds.
+2024-12-04 15:28:14 -0600  126128 execution.bulk     INFO     [Process Pool] [Active processes: 4 / 4]
+2024-12-04 15:28:14 -0600  126128 execution.bulk     INFO     [Lines] [Finished: 8] [Processing: 4] [Pending: 1]
+2024-12-04 15:28:14 -0600  126128 execution.bulk     INFO     Processing Lines: line 6 (Process name(SpawnProcess-5)-Process id(101140)-Line number(6)), line 9 (Process name(SpawnProcess-7)-Process id(29748)-Line number(9)), line 10 (Process name(SpawnProcess-6)-Process id(119624)-Line number(10)), line 11 (Process name(SpawnProcess-4)-Process id(8368)-Line number(11)).
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr> --- Logging error ---
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr> Traceback (most recent call last):
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\logging\__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr> UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4ac' in position 48: character maps to <undefined>
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr> Call stack:
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr>   File "<string>", line 1, in <module>
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\spawn.py", line 135, in _main
+    return self._bootstrap(parent_sentinel)
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_line_execution_process_pool.py", line 714, in _process_wrapper
+    _exec_line_for_queue(
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_line_execution_process_pool.py", line 770, in _exec_line_for_queue
+    result = _exec_line(
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_line_execution_process_pool.py", line 789, in _exec_line
+    line_result = executor.exec_line(
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_script_executor.py", line 139, in exec_line
+    return self._exec_line(inputs, index, run_id, allow_generator_output=allow_generator_output)
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_script_executor.py", line 182, in _exec_line
+    output = self._func(**inputs)
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\tracing\_trace.py", line 538, in wrapped
+    return func(*args, **kwargs)
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr>   File "C:\Users\johndoe\Projects\github\percebus\hello-azure-ai-foundry-py\src\hello_azure_ai_foundry\evaluation\evaluation.py", line 41, in evaluate_chat_with_products
+    response = chat_with_products(messages=[{"role": "user", "content": query}])
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr>   File "C:\Users\johndoe\Projects\github\percebus\hello-azure-ai-foundry-py\src\hello_azure_ai_foundry\app\ai\chat.py", line 45, in chat_with_products
+    logger.info(f"💬 Response: {response.choices[0].message}")
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600   29748 execution          WARNING  [Flex in line 9 (index starts from 0)] stderr> Message: "💬 Response: {'content': 'Sorry, I only can answer queries related to outdoor/camping gear and clothing. So, how can I help?', 'role': 'assistant'}"
+Arguments: ()
+2024-12-04 15:28:26 -0600  126128 execution.bulk     INFO     Process name(SpawnProcess-7)-Process id(29748)-Line number(9) completed.
+2024-12-04 15:28:26 -0600  126128 execution.bulk     INFO     Process name(SpawnProcess-7)-Process id(29748)-Line number(12) start execution.
+2024-12-04 15:28:26 -0600  126128 execution.bulk     INFO     Process name(SpawnProcess-5)-Process id(101140)-Line number(6) completed.
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr> --- Logging error ---
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr> Traceback (most recent call last):
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\logging\__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr> UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4ac' in position 48: character maps to <undefined>
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr> Call stack:
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr>   File "<string>", line 1, in <module>
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\spawn.py", line 135, in _main
+    return self._bootstrap(parent_sentinel)
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_line_execution_process_pool.py", line 714, in _process_wrapper
+    _exec_line_for_queue(
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_line_execution_process_pool.py", line 770, in _exec_line_for_queue
+    result = _exec_line(
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_line_execution_process_pool.py", line 789, in _exec_line
+    line_result = executor.exec_line(
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_script_executor.py", line 139, in exec_line
+    return self._exec_line(inputs, index, run_id, allow_generator_output=allow_generator_output)
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_script_executor.py", line 182, in _exec_line
+    output = self._func(**inputs)
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\tracing\_trace.py", line 538, in wrapped
+    return func(*args, **kwargs)
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr>   File "C:\Users\johndoe\Projects\github\percebus\hello-azure-ai-foundry-py\src\hello_azure_ai_foundry\evaluation\evaluation.py", line 41, in evaluate_chat_with_products
+    response = chat_with_products(messages=[{"role": "user", "content": query}])
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr>   File "C:\Users\johndoe\Projects\github\percebus\hello-azure-ai-foundry-py\src\hello_azure_ai_foundry\app\ai\chat.py", line 45, in chat_with_products
+    logger.info(f"💬 Response: {response.choices[0].message}")
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr>
+2024-12-04 15:28:26 -0600  119624 execution          WARNING  [Flex in line 10 (index starts from 0)] stderr> Message: "💬 Response: {'content': 'Sorry, I only can answer queries related to outdoor/camping gear and clothing. So, how can I help?', 'role': 'assistant'}"
+Arguments: ()
+2024-12-04 15:28:26 -0600  126128 execution.bulk     INFO     Process name(SpawnProcess-6)-Process id(119624)-Line number(10) completed.
+2024-12-04 15:28:27 -0600  126128 execution.bulk     INFO     Finished 11 / 13 lines.
+2024-12-04 15:28:27 -0600  126128 execution.bulk     INFO     Average execution time for completed lines: 17.58 seconds. Estimated time for incomplete lines: 35.16 seconds.
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr> --- Logging error ---
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr> Traceback (most recent call last):
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr>
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\logging\__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr>
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr>
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr> UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4ac' in position 48: character maps to <undefined>
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr>
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr> Call stack:
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr>   File "<string>", line 1, in <module>
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr>
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr>
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\spawn.py", line 135, in _main
+    return self._bootstrap(parent_sentinel)
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr>
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr>
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr>
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_line_execution_process_pool.py", line 714, in _process_wrapper
+    _exec_line_for_queue(
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr>
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_line_execution_process_pool.py", line 770, in _exec_line_for_queue
+    result = _exec_line(
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr>
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_line_execution_process_pool.py", line 789, in _exec_line
+    line_result = executor.exec_line(
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr>
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_script_executor.py", line 139, in exec_line
+    return self._exec_line(inputs, index, run_id, allow_generator_output=allow_generator_output)
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr>
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_script_executor.py", line 182, in _exec_line
+    output = self._func(**inputs)
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr>
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\tracing\_trace.py", line 538, in wrapped
+    return func(*args, **kwargs)
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr>
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr>   File "C:\Users\johndoe\Projects\github\percebus\hello-azure-ai-foundry-py\src\hello_azure_ai_foundry\evaluation\evaluation.py", line 41, in evaluate_chat_with_products
+    response = chat_with_products(messages=[{"role": "user", "content": query}])
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr>
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr>
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr>   File "C:\Users\johndoe\Projects\github\percebus\hello-azure-ai-foundry-py\src\hello_azure_ai_foundry\app\ai\chat.py", line 45, in chat_with_products
+    logger.info(f"💬 Response: {response.choices[0].message}")
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr>
+2024-12-04 15:28:28 -0600    8368 execution          WARNING  [Flex in line 11 (index starts from 0)] stderr> Message: "💬 Response: {'content': 'Sorry, I only can answer queries related to outdoor/camping gear and clothing. So, how can I help?', 'role': 'assistant'}"
+Arguments: ()
+2024-12-04 15:28:28 -0600  126128 execution.bulk     INFO     Process name(SpawnProcess-4)-Process id(8368)-Line number(11) completed.
+2024-12-04 15:28:28 -0600  126128 execution.bulk     INFO     Finished 12 / 13 lines.
+2024-12-04 15:28:28 -0600  126128 execution.bulk     INFO     Average execution time for completed lines: 16.2 seconds. Estimated time for incomplete lines: 16.2 seconds.
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr> --- Logging error ---
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr> Traceback (most recent call last):
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr>
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\logging\__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr>
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr>
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr> UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4ac' in position 48: character maps to <undefined>
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr>
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr> Call stack:
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr>   File "<string>", line 1, in <module>
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr>
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr>
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\spawn.py", line 135, in _main
+    return self._bootstrap(parent_sentinel)
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr>
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr>
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr>
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_line_execution_process_pool.py", line 714, in _process_wrapper
+    _exec_line_for_queue(
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr>
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_line_execution_process_pool.py", line 770, in _exec_line_for_queue
+    result = _exec_line(
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr>
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_line_execution_process_pool.py", line 789, in _exec_line
+    line_result = executor.exec_line(
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr>
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_script_executor.py", line 139, in exec_line
+    return self._exec_line(inputs, index, run_id, allow_generator_output=allow_generator_output)
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr>
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\executor\_script_executor.py", line 182, in _exec_line
+    output = self._func(**inputs)
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr>
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\site-packages\promptflow\tracing\_trace.py", line 538, in wrapped
+    return func(*args, **kwargs)
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr>
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr>   File "C:\Users\johndoe\Projects\github\percebus\hello-azure-ai-foundry-py\src\hello_azure_ai_foundry\evaluation\evaluation.py", line 41, in evaluate_chat_with_products
+    response = chat_with_products(messages=[{"role": "user", "content": query}])
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr>
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr>   File "C:\Users\johndoe\.pyenv\pyenv-win\versions\3.12.7\Lib\contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr>
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr>   File "C:\Users\johndoe\Projects\github\percebus\hello-azure-ai-foundry-py\src\hello_azure_ai_foundry\app\ai\chat.py", line 45, in chat_with_products
+    logger.info(f"💬 Response: {response.choices[0].message}")
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr>
+2024-12-04 15:28:29 -0600   29748 execution          WARNING  [Flex in line 12 (index starts from 0)] stderr> Message: "💬 Response: {'content': 'Sorry, I only can answer queries related to outdoor/camping gear and clothing. So, how can I help?', 'role': 'assistant'}"
+Arguments: ()
+2024-12-04 15:28:29 -0600  126128 execution.bulk     INFO     Process name(SpawnProcess-7)-Process id(29748)-Line number(12) completed.
+2024-12-04 15:28:29 -0600  126128 execution.bulk     INFO     Finished 13 / 13 lines.
+2024-12-04 15:28:29 -0600  126128 execution.bulk     INFO     Average execution time for completed lines: 15.03 seconds. Estimated time for incomplete lines: 0.0 seconds.
+2024-12-04 15:28:29 -0600  126128 execution.bulk     INFO     The thread monitoring the process [101140-SpawnProcess-5] will be terminated.
+2024-12-04 15:28:29 -0600  126128 execution.bulk     INFO     The thread monitoring the process [119624-SpawnProcess-6] will be terminated.
+2024-12-04 15:28:29 -0600  126128 execution.bulk     INFO     The thread monitoring the process [29748-SpawnProcess-7] will be terminated.
+2024-12-04 15:28:29 -0600  126128 execution.bulk     INFO     The thread monitoring the process [8368-SpawnProcess-4] will be terminated.
+2024-12-04 15:28:29 -0600  101140 execution.bulk     INFO     The process [101140] has received a terminate signal.
+2024-12-04 15:28:29 -0600  119624 execution.bulk     INFO     The process [119624] has received a terminate signal.
+2024-12-04 15:28:29 -0600   29748 execution.bulk     INFO     The process [29748] has received a terminate signal.
+2024-12-04 15:28:29 -0600    8368 execution.bulk     INFO     The process [8368] has received a terminate signal.
+2024-12-04 15:28:31 -0600  126128 execution.bulk     INFO     Process 8368 terminated.
+2024-12-04 15:28:31 -0600  126128 execution.bulk     INFO     Process 119624 terminated.
+2024-12-04 15:28:31 -0600  126128 execution.bulk     INFO     Process 101140 terminated.
+2024-12-04 15:28:31 -0600  126128 execution.bulk     INFO     Process 29748 terminated.
+2024-12-04 15:28:31 -0600  126128 execution          ERROR    2/13 flow run failed, indexes: [4,6], exception of index 4: Execution failure in 'evaluate_chat_with_products': (HttpResponseError) (429) Requests to the Creates a model response for the given chat conversation. Operation under Azure AI Model Inference API version 2024-05-01-preview have exceeded token rate limit of your current AIServices S0 pricing tier. Please retry after 1 second. Please contact Azure support service if you would like to further increase the default rate limit.
+Code: 429
+Message: Requests to the Creates a model response for the given chat conversation. Operation under Azure AI Model Inference API version 2024-05-01-preview have exceeded token rate limit of your current AIServices S0 pricing tier. Please retry after 1 second. Please contact Azure support service if you would like to further increase the default rate limit.
+======= Run Summary =======
+
+Run name: "src_hello_azure_ai_foundry_evaluation_evaluation_evaluate_chat_with_products_0j0h74pk_20241204_152459_840710"
+Run status: "Completed"
+Start time: "2024-12-04 15:24:59.838607-06:00"
+Duration: "0:03:32.161728"
+Output path: "C:\Users\johndoe\.promptflow\.runs\src_hello_azure_ai_foundry_evaluation_evaluation_evaluate_chat_with_products_0j0h74pk_20241204_152459_840710"
+
+Prompt flow service has started...
+You can view the traces in local from http://127.0.0.1:23333/v1.0/ui/traces/?#run=azure_ai_evaluation_evaluators_common_base_eval_asyncevaluatorbase_vt8uefa5_20241204_152832_476874
+[2024-12-04 15:28:32 -0600][promptflow._core.entry_meta_generator][WARNING] - Generate meta in current process and timeout won't take effect. Please handle timeout manually outside current process.
+[2024-12-04 15:28:32 -0600][promptflow._sdk._orchestrator.run_submitter][INFO] - Submitting run azure_ai_evaluation_evaluators_common_base_eval_asyncevaluatorbase_vt8uefa5_20241204_152832_476874, log path: C:\Users\johndoe\.promptflow\.runs\azure_ai_evaluation_evaluators_common_base_eval_asyncevaluatorbase_vt8uefa5_20241204_152832_476874\logs.txt
+[2024-12-04 15:28:36 -0600][promptflow.core._prompty_utils][ERROR] - Exception occurs: RateLimitError: Error code: 429 - {'error': {'code': '429', 'message': 'Requests to the ChatCompletions_Create Operation under Azure OpenAI API version 2024-06-01 have exceeded token rate limit of your current AIServices S0 pricing tier. Please retry after 50 seconds. Please contact Azure support service if you would like to further increase the default rate limit.'}}
+[2024-12-04 15:28:36 -0600][promptflow.core._prompty_utils][WARNING] - RateLimitError #0, Retry-After=50, Back off 50.0 seconds for retry.
+[2024-12-04 15:28:36 -0600][promptflow.core._prompty_utils][ERROR] - Exception occurs: RateLimitError: Error code: 429 - {'error': {'code': '429', 'message': 'Requests to the ChatCompletions_Create Operation under Azure OpenAI API version 2024-06-01 have exceeded token rate limit of your current AIServices S0 pricing tier. Please retry after 50 seconds. Please contact Azure support service if you would like to further increase the default rate limit.'}}
+[2024-12-04 15:28:36 -0600][promptflow.core._prompty_utils][WARNING] - RateLimitError #0, Retry-After=50, Back off 50.0 seconds for retry.
+[2024-12-04 15:28:36 -0600][promptflow.core._prompty_utils][ERROR] - Exception occurs: RateLimitError: Error code: 429 - {'error': {'code': '429', 'message': 'Requests to the ChatCompletions_Create Operation under Azure OpenAI API version 2024-06-01 have exceeded token rate limit of your current AIServices S0 pricing tier. Please retry after 50 seconds. Please contact Azure support service if you would like to further increase the default rate limit.'}}
+[2024-12-04 15:28:36 -0600][promptflow.core._prompty_utils][WARNING] - RateLimitError #0, Retry-After=50, Back off 50.0 seconds for retry.
+[2024-12-04 15:28:36 -0600][promptflow.core._prompty_utils][ERROR] - Exception occurs: RateLimitError: Error code: 429 - {'error': {'code': '429', 'message': 'Requests to the ChatCompletions_Create Operation under Azure OpenAI API version 2024-06-01 have exceeded token rate limit of your current AIServices S0 pricing tier. Please retry after 50 seconds. Please contact Azure support service if you would like to further increase the default rate limit.'}}
+[2024-12-04 15:28:36 -0600][promptflow.core._prompty_utils][WARNING] - RateLimitError #0, Retry-After=50, Back off 50.0 seconds for retry.
+[2024-12-04 15:28:36 -0600][promptflow.core._prompty_utils][ERROR] - Exception occurs: RateLimitError: Error code: 429 - {'error': {'code': '429', 'message': 'Requests to the ChatCompletions_Create Operation under Azure OpenAI API version 2024-06-01 have exceeded token rate limit of your current AIServices S0 pricing tier. Please retry after 50 seconds. Please contact Azure support service if you would like to further increase the default rate limit.'}}
+[2024-12-04 15:28:36 -0600][promptflow.core._prompty_utils][WARNING] - RateLimitError #0, Retry-After=50, Back off 50.0 seconds for retry.
+[2024-12-04 15:28:36 -0600][promptflow.core._prompty_utils][ERROR] - Exception occurs: RateLimitError: Error code: 429 - {'error': {'code': '429', 'message': 'Requests to the ChatCompletions_Create Operation under Azure OpenAI API version 2024-06-01 have exceeded token rate limit of your current AIServices S0 pricing tier. Please retry after 50 seconds. Please contact Azure support service if you would like to further increase the default rate limit.'}}
+[2024-12-04 15:28:36 -0600][promptflow.core._prompty_utils][WARNING] - RateLimitError #0, Retry-After=50, Back off 50.0 seconds for retry.
+[2024-12-04 15:28:36 -0600][promptflow.core._prompty_utils][ERROR] - Exception occurs: RateLimitError: Error code: 429 - {'error': {'code': '429', 'message': 'Requests to the ChatCompletions_Create Operation under Azure OpenAI API version 2024-06-01 have exceeded token rate limit of your current AIServices S0 pricing tier. Please retry after 50 seconds. Please contact Azure support service if you would like to further increase the default rate limit.'}}
+[2024-12-04 15:28:36 -0600][promptflow.core._prompty_utils][WARNING] - RateLimitError #0, Retry-After=50, Back off 50.0 seconds for retry.
+[2024-12-04 15:28:36 -0600][promptflow.core._prompty_utils][ERROR] - Exception occurs: RateLimitError: Error code: 429 - {'error': {'code': '429', 'message': 'Requests to the ChatCompletions_Create Operation under Azure OpenAI API version 2024-06-01 have exceeded token rate limit of your current AIServices S0 pricing tier. Please retry after 50 seconds. Please contact Azure support service if you would like to further increase the default rate limit.'}}
+[2024-12-04 15:28:36 -0600][promptflow.core._prompty_utils][WARNING] - RateLimitError #0, Retry-After=50, Back off 50.0 seconds for retry.
+[2024-12-04 15:28:36 -0600][promptflow.core._prompty_utils][ERROR] - Exception occurs: RateLimitError: Error code: 429 - {'error': {'code': '429', 'message': 'Requests to the ChatCompletions_Create Operation under Azure OpenAI API version 2024-06-01 have exceeded token rate limit of your current AIServices S0 pricing tier. Please retry after 50 seconds. Please contact Azure support service if you would like to further increase the default rate limit.'}}
+[2024-12-04 15:28:36 -0600][promptflow.core._prompty_utils][WARNING] - RateLimitError #0, Retry-After=50, Back off 50.0 seconds for retry.
+[2024-12-04 15:28:36 -0600][promptflow.core._prompty_utils][ERROR] - Exception occurs: RateLimitError: Error code: 429 - {'error': {'code': '429', 'message': 'Requests to the ChatCompletions_Create Operation under Azure OpenAI API version 2024-06-01 have exceeded token rate limit of your current AIServices S0 pricing tier. Please retry after 50 seconds. Please contact Azure support service if you would like to further increase the default rate limit.'}}
+[2024-12-04 15:28:36 -0600][promptflow.core._prompty_utils][WARNING] - RateLimitError #0, Retry-After=50, Back off 50.0 seconds for retry.
+[2024-12-04 15:29:29 -0600][promptflow.core._prompty_utils][ERROR] - Exception occurs: RateLimitError: Error code: 429 - {'error': {'code': '429', 'message': 'Requests to the ChatCompletions_Create Operation under Azure OpenAI API version 2024-06-01 have exceeded token rate limit of your current AIServices S0 pricing tier. Please retry after 60 seconds. Please contact Azure support service if you would like to further increase the default rate limit.'}}
+[2024-12-04 15:29:29 -0600][promptflow.core._prompty_utils][WARNING] - RateLimitError #1, Retry-After=60, Back off 60.0 seconds for retry.
+[2024-12-04 15:29:29 -0600][promptflow.core._prompty_utils][ERROR] - Exception occurs: RateLimitError: Error code: 429 - {'error': {'code': '429', 'message': 'Requests to the ChatCompletions_Create Operation under Azure OpenAI API version 2024-06-01 have exceeded token rate limit of your current AIServices S0 pricing tier. Please retry after 60 seconds. Please contact Azure support service if you would like to further increase the default rate limit.'}}
+[2024-12-04 15:29:29 -0600][promptflow.core._prompty_utils][WARNING] - RateLimitError #1, Retry-After=60, Back off 60.0 seconds for retry.
+[2024-12-04 15:29:29 -0600][promptflow.core._prompty_utils][ERROR] - Exception occurs: RateLimitError: Error code: 429 - {'error': {'code': '429', 'message': 'Requests to the ChatCompletions_Create Operation under Azure OpenAI API version 2024-06-01 have exceeded token rate limit of your current AIServices S0 pricing tier. Please retry after 60 seconds. Please contact Azure support service if you would like to further increase the default rate limit.'}}
+[2024-12-04 15:29:29 -0600][promptflow.core._prompty_utils][WARNING] - RateLimitError #1, Retry-After=60, Back off 60.0 seconds for retry.
+[2024-12-04 15:29:29 -0600][promptflow.core._prompty_utils][ERROR] - Exception occurs: RateLimitError: Error code: 429 - {'error': {'code': '429', 'message': 'Requests to the ChatCompletions_Create Operation under Azure OpenAI API version 2024-06-01 have exceeded token rate limit of your current AIServices S0 pricing tier. Please retry after 60 seconds. Please contact Azure support service if you would like to further increase the default rate limit.'}}
+[2024-12-04 15:29:29 -0600][promptflow.core._prompty_utils][WARNING] - RateLimitError #1, Retry-After=60, Back off 60.0 seconds for retry.
+[2024-12-04 15:29:29 -0600][promptflow.core._prompty_utils][ERROR] - Exception occurs: RateLimitError: Error code: 429 - {'error': {'code': '429', 'message': 'Requests to the ChatCompletions_Create Operation under Azure OpenAI API version 2024-06-01 have exceeded token rate limit of your current AIServices S0 pricing tier. Please retry after 60 seconds. Please contact Azure support service if you would like to further increase the default rate limit.'}}
+[2024-12-04 15:29:29 -0600][promptflow.core._prompty_utils][WARNING] - RateLimitError #1, Retry-After=60, Back off 60.0 seconds for retry.
+[2024-12-04 15:29:32 -0600][promptflow.core._prompty_utils][ERROR] - Exception occurs: RateLimitError: Error code: 429 - {'error': {'code': '429', 'message': 'Requests to the ChatCompletions_Create Operation under Azure OpenAI API version 2024-06-01 have exceeded token rate limit of your current AIServices S0 pricing tier. Please retry after 58 seconds. Please contact Azure support service if you would like to further increase the default rate limit.'}}
+[2024-12-04 15:29:32 -0600][promptflow.core._prompty_utils][WARNING] - RateLimitError #0, Retry-After=58, Back off 58.0 seconds for retry.
+[2024-12-04 15:30:32 -0600][promptflow.core._prompty_utils][ERROR] - Exception occurs: RateLimitError: Error code: 429 - {'error': {'code': '429', 'message': 'Requests to the ChatCompletions_Create Operation under Azure OpenAI API version 2024-06-01 have exceeded token rate limit of your current AIServices S0 pricing tier. Please retry after 60 seconds. Please contact Azure support service if you would like to further increase the default rate limit.'}}
+[2024-12-04 15:30:32 -0600][promptflow.core._prompty_utils][WARNING] - RateLimitError #2, Retry-After=60, Back off 60.0 seconds for retry.
+2024-12-04 15:28:32 -0600  126128 execution.bulk     INFO     Current thread is not main thread, skip signal handler registration in BatchEngine.
+2024-12-04 15:29:31 -0600  126128 execution.bulk     INFO     Finished 1 / 11 lines.
+2024-12-04 15:29:31 -0600  126128 execution.bulk     INFO     Average execution time for completed lines: 59.37 seconds. Estimated time for incomplete lines: 593.7 seconds.
+2024-12-04 15:29:31 -0600  126128 execution.bulk     INFO     Finished 3 / 11 lines.
+2024-12-04 15:29:31 -0600  126128 execution.bulk     INFO     Average execution time for completed lines: 19.79 seconds. Estimated time for incomplete lines: 158.32 seconds.
+2024-12-04 15:29:32 -0600  126128 execution.bulk     INFO     Finished 4 / 11 lines.
+2024-12-04 15:29:32 -0600  126128 execution.bulk     INFO     Average execution time for completed lines: 15.09 seconds. Estimated time for incomplete lines: 105.63 seconds.
+2024-12-04 15:29:36 -0600  126128 execution.bulk     INFO     Finished 5 / 11 lines.
+2024-12-04 15:29:36 -0600  126128 execution.bulk     INFO     Average execution time for completed lines: 12.69 seconds. Estimated time for incomplete lines: 76.14 seconds.
+2024-12-04 15:30:34 -0600  126128 execution.bulk     INFO     Finished 6 / 11 lines.
+2024-12-04 15:30:34 -0600  126128 execution.bulk     INFO     Average execution time for completed lines: 20.27 seconds. Estimated time for incomplete lines: 101.35 seconds.
+2024-12-04 15:30:34 -0600  126128 execution.bulk     INFO     Finished 7 / 11 lines.
+2024-12-04 15:30:34 -0600  126128 execution.bulk     INFO     Average execution time for completed lines: 17.38 seconds. Estimated time for incomplete lines: 69.52 seconds.
+2024-12-04 15:30:34 -0600  126128 execution.bulk     INFO     Finished 8 / 11 lines.
+2024-12-04 15:30:34 -0600  126128 execution.bulk     INFO     Average execution time for completed lines: 15.23 seconds. Estimated time for incomplete lines: 45.69 seconds.
+2024-12-04 15:30:35 -0600  126128 execution.bulk     INFO     Finished 9 / 11 lines.
+2024-12-04 15:30:35 -0600  126128 execution.bulk     INFO     Average execution time for completed lines: 13.62 seconds. Estimated time for incomplete lines: 27.24 seconds.
+2024-12-04 15:30:36 -0600  126128 execution.bulk     INFO     Finished 10 / 11 lines.
+2024-12-04 15:30:36 -0600  126128 execution.bulk     INFO     Average execution time for completed lines: 12.41 seconds. Estimated time for incomplete lines: 12.41 seconds.
+2024-12-04 15:31:35 -0600  126128 execution.bulk     INFO     Finished 11 / 11 lines.
+2024-12-04 15:31:35 -0600  126128 execution.bulk     INFO     Average execution time for completed lines: 16.6 seconds. Estimated time for incomplete lines: 0.0 seconds.
+======= Run Summary =======
+
+Run name: "azure_ai_evaluation_evaluators_common_base_eval_asyncevaluatorbase_vt8uefa5_20241204_152832_476874"
+Run status: "Completed"
+Start time: "2024-12-04 15:28:32.475370-06:00"
+Duration: "0:03:03.752641"
+Output path: "C:\Users\johndoe\.promptflow\.runs\azure_ai_evaluation_evaluators_common_base_eval_asyncevaluatorbase_vt8uefa5_20241204_152832_476874"
+
+======= Combined Run Summary (Per Evaluator) =======
+
+{
+    "groundedness": {
+        "status": "Completed",
+        "duration": "0:03:03.752641",
+        "completed_lines": 11,
+        "failed_lines": 0,
+        "log_path": "C:\\Users\\johndoe\\.promptflow\\.runs\\azure_ai_evaluation_evaluators_common_base_eval_asyncevaluatorbase_vt8uefa5_20241204_152832_476874"
+    }
+}
+
+====================================================
+
+Evaluation results saved to "C:\Users\johndoe\Projects\github\percebus\hello-azure-ai-foundry-py\myevalresults.json".
+
+'-----Summarized Metrics-----'
+{'groundedness.gpt_groundedness': 1.5454545454545454,
+ 'groundedness.groundedness': 1.5454545454545454}
+'-----Tabular Result-----'
+                                     outputs.response                                    outputs.context  ...           outputs.groundedness.groundedness_reason line_number
+0   Could you please specify which tent you are as...  [[{'id': '8', 'content': 'Welcome to the joy o...  ...  The RESPONSE does not reference any specific t...           0
+1   Could you please specify which camping table y...  [[{'id': '5', 'content': 'CampBuddy's BaseCamp...  ...  The RESPONSE does not relate to the specific d...           1
+2   Sorry, I only can answer queries related to ou...  [[{'id': '11', 'content': 'Meet the TrekReady ...  ...  The RESPONSE does not relate to the CONTEXT at...           2
+3   Could you please clarify if you're asking abou...  [[{'id': '11', 'content': 'Meet the TrekReady ...  ...  The RESPONSE does not relate to the informatio...           3
+4                                            (Failed)                                           (Failed)  ...  The RESPONSE is grounded in the CONTEXT as it ...           4
+5   The TrailMaster X4 Tent comes with an included...  [[{'id': '1', 'content': 'Unveiling the TrailM...  ...  The RESPONSE accurately reflects part of the i...           5
+6                                            (Failed)                                           (Failed)  ...  The RESPONSE is entirely unrelated to the CONT...           6
+7   The TrailBlaze Hiking Pants are crafted from h...  [[{'id': '10', 'content': 'Meet the TrailBlaze...  ...  The RESPONSE does not relate to the CONTEXT at...           7
+8   Sorry, I only can answer queries related to ou...  [[{'id': '10', 'content': 'Meet the TrailBlaze...  ...  The RESPONSE does not reference any of the pro...           8
+9   Sorry, I only can answer queries related to ou...  [[{'id': '10', 'content': 'Meet the TrailBlaze...  ...  The RESPONSE does not relate to the CONTEXT at...           9
+10  Sorry, I only can answer queries related to ou...  [[{'id': '10', 'content': 'Meet the TrailBlaze...  ...  The RESPONSE does not connect to the CONTEXT a...          10
+11  Sorry, I only can answer queries related to ou...  [[{'id': '13', 'content': 'Unleash your inner ...  ...                                                NaN          11
+12  Sorry, I only can answer queries related to ou...  [[{'id': '8', 'content': 'Welcome to the joy o...  ...                                                NaN          12
+
+[13 rows x 8 columns]
+('View evaluation results in AI Studio: '
+ 'https://ai.azure.com/build/evaluation/4531fb18-e4e7-4e75-9164-8f9fad614b2e?wsid=/subscriptions/2445fdd8-5e2c-4da4-8e51-8da0deba3b81/resourceGroups/rg_openai/providers/Microsoft.MachineLearningServices/workspaces/hello-ai-foundry')

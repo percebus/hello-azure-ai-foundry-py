@@ -34,7 +34,7 @@ def chat_with_products(messages: list, context: dict = None) -> dict:
     documents = get_product_documents(messages, context)
 
     # do a grounded chat call using the search results
-    grounded_chat_prompt = PromptTemplate.from_prompty(Path(ASSET_PATH) / "prompts/grounded_chat/v1.prompty")
+    grounded_chat_prompt = PromptTemplate.from_prompty(Path(ASSET_PATH) / "prompts/grounded_chat/v2.prompty")
 
     system_message = grounded_chat_prompt.create_messages(documents=documents, context=context)
     response = chat.complete(
